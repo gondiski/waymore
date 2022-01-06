@@ -167,9 +167,16 @@ img{
 .venue h2{
     font-weight: 300;
 }
+.venue p{
+    font-weight: 300;
+}
 .swiper {
     width: auto;
     height: 150px;
+}
+.privacy{
+    grid-column: span 4;
+    font-family: 'Oswald',serif;
 }
 .footer{
     grid-column: span 5;
@@ -193,7 +200,7 @@ img{
 .footer a:hover{
     color:slategray;
 }
-.footer > .about{
+.footer .about, .socials{
     width: 33.3%;
 }
 .socials > ul > li{
