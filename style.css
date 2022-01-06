@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;900&family=Oswald:wght@200;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+header{
+    background: #fafafa;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(1fr 50px) 5;
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+.col{
+    grid-column: span 1/2;
+    background: #f44a2d;
+    min-height: 5ch;
+    border: 3px solid #000;
+}
+img{
+    width:100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
