@@ -46,7 +46,7 @@ nav{
 }
 .col{
     grid-column: span 1;
-    background: #101010;
+    /* background: #101010; */
     min-height: 300px;
     margin: 0.4rem;
     border-radius: 5px;
@@ -94,6 +94,7 @@ img{
 }
 .next{
     display: flex;
+    align-items: center;
     background: #101010;
     color: #fff;
     padding: 0.4rem 0;
@@ -108,12 +109,20 @@ img{
     padding-right: 2rem;
     width: 20%;
 }
+.next img{
+    border-radius: 5px;
+    justify-content: center;
+}
 .next > .event{
     font-family: 'Oswald', serif;
     padding-left: 2rem;
 }
 .event h3{
     font-weight: 600;
+}
+.event span{
+    font-weight: 300;
+    color: springgreen;
 }
 .event p{
     font-weight: 400;
@@ -122,6 +131,11 @@ img{
     background: #fff;
     border: 4.5px solid #101010;
     color:#101010;
+    cursor: pointer;
+}
+.eventlist > .next:nth-child(odd){
+    background: crimson;
+    color:salmon;
 }
 .gallery{
     grid-column: span 2;
@@ -144,8 +158,11 @@ img{
     grid-column: 2/3;
     border-radius: 0 5px 5px 0;
     padding: 0.4rem;
-    background-color: #101010;
-    color: #fff;
+    border-top:3px solid #101010;
+    border-right: 3px solid #101010;
+    border-bottom: 3px solid #101010;
+    /* background-color: #101010;
+    color: #fff; */
 }
 .venue h2{
     font-weight: 300;
@@ -175,4 +192,11 @@ img{
 }
 .footer a:hover{
     color:slategray;
+}
+.footer > .about{
+    width: 33.3%;
+}
+.socials > ul > li{
+    display: flex;
+    align-items: center;
 }
