@@ -6,7 +6,7 @@
     outline: none;
 }
 header{
-    background: #fafafa;
+    /* background: #fafafa; */
     font-family: 'Oswald', 'Arial', sans-serif;
     /* text-transform: uppercase;  */
     display: grid;
@@ -21,6 +21,8 @@ nav{
 }
 .navbar{
     /* width: 80%; */
+    display: flex;
+    justify-content: space-between;
 }
 .navbar a {
     color: #101010;
@@ -207,3 +209,8 @@ img{
     display: flex;
     align-items: center;
 }
+[data-theme="dark"] {
+    background-color: #101010 !important;
+    color: #eee;
+    /* --link-color: #eee; */
+  }
